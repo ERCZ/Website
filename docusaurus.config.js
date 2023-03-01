@@ -1,5 +1,7 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github')
 const darkCodeTheme = require('prism-react-renderer/themes/dracula')
+const math = require('remark-math')
+const katex = require('rehype-katex')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -21,6 +23,8 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          remarkPlugins: [math],
+          rehypePlugins: [katex],
         },
         blog: {
           showReadingTime: true,
@@ -34,6 +38,19 @@ const config = {
     ],
   ],
 
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous',
+    },
+  ],
+
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
   plugins: ['docusaurus-plugin-sass'],
 
   themeConfig:
@@ -59,6 +76,11 @@ const config = {
                 label: 'HTML&CSS',
                 sidebarId: 'htmlCss',
               },
+              {
+                type: 'docSidebar',
+                label: 'LeetCode',
+                sidebarId: 'leetcode',
+              },
             ],
           },
           { to: '/blog', label: '博客', position: 'left' },
@@ -71,9 +93,9 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [],
-        copyright: 'Copyright © ERCZ.CC | All Rights Reserved.',
+        copyright: `Copyright ${new Date().getFullYear()} © ERCZ.CC | All Rights Reserved.`,
       },
       prism: {
         theme: lightCodeTheme,
