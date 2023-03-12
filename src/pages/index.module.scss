@@ -1,6 +1,7 @@
 .main {
   height: calc(100vh - 3.75rem);
-  background-image: url('/img/bg.jpg');
+  // background-image: url('/img/bg.jpg');
+  background-image: url('https://api.xyz-studio.xyz/common/bing-bg');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -9,10 +10,11 @@
   .card {
     color: #fff;
     top: 50%;
-    right: 10%;
-    transform: translate(0, -55%);
+    right: 50%;
+    transform: translate(50%, -55%);
     border-radius: 1rem;
     display: inline-block;
+    width: 512px;
     max-width: 90%;
     padding: 4rem 2rem;
     text-align: center;
@@ -58,8 +60,6 @@
   .main {
     .card {
       width: 90%;
-      right: 50%;
-      transform: translate(50%, -55%);
     }
   }
 }

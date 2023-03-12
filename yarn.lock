@@ -6699,6 +6699,14 @@ react-loadable-ssr-addon-v5-slorber@^1.0.1:
   dependencies:
     "@babel/runtime" "^7.10.3"
 
+react-particles@^2.9.3:
+  version "2.9.3"
+  resolved "https://registry.npmjs.org/react-particles/-/react-particles-2.9.3.tgz#2804e2e2513cdaad88939fb09322d64236d3c28d"
+  integrity sha512-MptmCrrBeugweBWLx7IZyxMc8t8Ok128ygzQA5uLIPPGfH+ecVz033fd8V8ktv/YOBMLof7asjA9m5XSm1iu6A==
+  dependencies:
+    fast-deep-equal "^3.1.3"
+    tsparticles-engine "^2.9.3"
+
 react-router-config@^5.1.1:
   version "5.1.1"
   resolved "https://registry.npmjs.org/react-router-config/-/react-router-config-5.1.1.tgz#0f4263d1a80c6b2dc7b9c1902c9526478194a988"
@@ -7744,6 +7752,11 @@ tslib@^2.3.0:
   version "2.5.0"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.5.0.tgz#42bfed86f5787aeb41d031866c8f402429e0fddf"
   integrity sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==
+
+tsparticles-engine@^2.9.3:
+  version "2.9.3"
+  resolved "https://registry.npmjs.org/tsparticles-engine/-/tsparticles-engine-2.9.3.tgz#c521edd951df2520bd0a8aa76dbbe1b0b183094a"
+  integrity sha512-iAD8LyRH//kx10fDMm6AfQV6dRHs1ZacUUHqVwfutcqM4x1IV2ygpjk0X87LKCnBxYeIMG78+tlxXpnpwUccOg==
 
 type-fest@^0.20.2:
   version "0.20.2"
