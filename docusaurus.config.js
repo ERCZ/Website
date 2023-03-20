@@ -81,6 +81,11 @@ const config = {
                 label: 'LeetCode',
                 sidebarId: 'leetcode',
               },
+              {
+                type: 'docSidebar',
+                label: 'PC',
+                sidebarId: 'pc',
+              },
             ],
           },
           { to: '/blog', label: '博客', position: 'left' },
