@@ -68,7 +68,7 @@ const config = {
         items: [
           {
             type: 'dropdown',
-            label: '笔记',
+            label: '前端',
             position: 'left',
             items: [
               {
@@ -76,11 +76,25 @@ const config = {
                 label: 'HTML&CSS',
                 sidebarId: 'htmlCss',
               },
+            ],
+          },
+          {
+            type: 'dropdown',
+            label: '算法',
+            position: 'left',
+            items: [
               {
                 type: 'docSidebar',
                 label: 'LeetCode',
                 sidebarId: 'leetcode',
               },
+            ],
+          },
+          {
+            type: 'dropdown',
+            label: '数码',
+            position: 'left',
+            items: [
               {
                 type: 'docSidebar',
                 label: 'PC',
