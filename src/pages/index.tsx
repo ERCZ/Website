@@ -6,7 +6,7 @@ import styles from './index.module.scss'
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext()
   return (
-    <Layout title="Home" description="Ake的个人网站，记录个人各类笔记与文章。">
+    <Layout title="首页" description="Ake的个人网站，记录个人各类笔记与文章。">
       <main className={styles.main}>
         <div className={styles.card}>
           <div className={styles.content}>
